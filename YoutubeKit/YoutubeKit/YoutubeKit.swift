@@ -139,12 +139,15 @@ public class YoutubeKit {
             }
         } else {
             let fmtStreamMapArray = fmtStreamMap.components(separatedBy: ",")
-            for videoEncodedString in fmtStreamMapArray {
-                var videoComponents = videoEncodedString.componentsFromQueryString()
-                videoComponents["title"] = videoTitle
-                videoComponents["isStream"] = false
-                return videoComponents
+            var video: [String: Any] = [
+                "title": videoTitle,
+                "isStream": false
+            ]
+            let urls: [[String: Any]] = fmtStreamMapArray.compactMap { (str) -> [String: Any]? in
+                return str.componentsFromQueryString()
             }
+            video["urls"] = urls
+            return video
         }
         return nil
     }
