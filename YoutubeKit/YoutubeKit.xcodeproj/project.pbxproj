@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0BCA9AA8230339A800F134ED /* YoutubeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BCA9AA6230339A800F134ED /* YoutubeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BCA9AAF23033EDB00F134ED /* YoutubeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA9AAE23033EDB00F134ED /* YoutubeKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BCA9AA3230339A800F134ED /* YoutubeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YoutubeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BCA9AA6230339A800F134ED /* YoutubeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YoutubeKit.h; sourceTree = "<group>"; };
 		0BCA9AA7230339A800F134ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCA9AAE23033EDB00F134ED /* YoutubeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0BCA9AA6230339A800F134ED /* YoutubeKit.h */,
 				0BCA9AA7230339A800F134ED /* Info.plist */,
+				0BCA9AAE23033EDB00F134ED /* YoutubeKit.swift */,
 			);
 			path = YoutubeKit;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					0BCA9AA2230339A800F134ED = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCA9AAF23033EDB00F134ED /* YoutubeKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		0BCA9AAC230339A800F134ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.binhnt.YoutubeKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		0BCA9AAD230339A800F134ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
