@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwiftYoutubeKit"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
 spec.summary      = "YouTube Video Link Parser for Swift."
 
   # This description is used to generate tags and improve search results.
@@ -82,7 +82,6 @@ spec.license      = "MIT (example)"
 
   spec.source       = { :git => "https://github.com/nhatnuoc/SwiftYoutubeKit.git", :tag => "#{spec.version}" }
 
-spec.ios.deployment_target = "12.1"
 spec.swift_version = "4.2"
 
 
