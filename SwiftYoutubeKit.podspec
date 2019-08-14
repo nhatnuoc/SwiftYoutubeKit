@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SwiftYoutubeKit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
 spec.summary      = "YouTube Video Link Parser for Swift."
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ spec.swift_version = "4.2"
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YoutubeKit", "YoutubeKit/**/*.{h,m}"
+  spec.source_files  = "YoutubeKit"
   spec.exclude_files = "YoutubeKit/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
